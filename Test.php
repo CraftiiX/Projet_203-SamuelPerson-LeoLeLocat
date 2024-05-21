@@ -2,6 +2,6 @@
 
 # Bonjour les enfants 
 
-# Je suis gentil
+# Je suis méchants
 
 ?>

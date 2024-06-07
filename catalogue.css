@@ -9,3 +9,25 @@ main{
     flex-direction: column;
     justify-content: center;
 }
+
+main > section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main > section > article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main > section > article > a > img{
+height: 20rem;
+}
+
+main > section > article > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

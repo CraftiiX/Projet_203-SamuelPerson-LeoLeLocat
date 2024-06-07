@@ -4,6 +4,14 @@ body{
 
 nav{
     background-color: #DFFFFB;
+    height: 6rem;
+    display: flex;
+}
+
+nav > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 a{
@@ -12,4 +20,7 @@ a{
 
 footer{
     background-color: #F16EA7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

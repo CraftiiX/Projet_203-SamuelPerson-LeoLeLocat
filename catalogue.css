@@ -14,12 +14,16 @@ main > section{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 main > section > article{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 main > section > article > a > img{

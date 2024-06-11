@@ -1,3 +1,5 @@
+/* Éléments connus */
+
 body{
     margin: 0%;
 }
@@ -26,4 +28,25 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+/* Page produit*/
+
+.barre {
+    border-radius: 24px;
+    background-color: #DFFFFB;
+    color: #E99F37;
+    font-family: "Fredoka", sans-serif;
+    font-size: 2rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.barre > a {
+    color: #E99F37;
+}
+
+.barre > a:hover {
+     color: #F16EA7;
+     text-decoration: underline;
 }

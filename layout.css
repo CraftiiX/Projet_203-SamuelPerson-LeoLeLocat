@@ -59,7 +59,6 @@ footer {
     justify-content: space-around;
 }
 
-
 footer > div {
     display: flex;
     flex-direction: column;

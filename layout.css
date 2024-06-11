@@ -59,15 +59,15 @@ footer {
     justify-content: space-around;
 }
 
-<<<<<<< HEAD
 footer > div {
     display: flex;
     flex-direction: column;
     justify-content: end;
-=======
+
+}
+
 /* Page produit*/
 
-<<<<<<< HEAD
 .barre {
     border-radius: 24px;
     background-color: #DFFFFB;
@@ -85,7 +85,6 @@ footer > div {
 .barre > a:hover {
      color: #F16EA7;
      text-decoration: underline;
->>>>>>> 7a23de1dfcec0a3ac27431a76239683151b3b3a1
+
 }
-=======
->>>>>>> c4c967f7b087678058352dfba1619b4ca538afdc
+

@@ -70,18 +70,58 @@ footer > div {
 .barre {
     border-radius: 24px;
     background-color: #DFFFFB;
+    width: 36rem;
     color: #E99F37;
     font-family: "Fredoka", sans-serif;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-optical-sizing: auto;
     font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.barre > a {
+.barre > p > a {
     color: #E99F37;
 }
 
-.barre > a:hover {
+.barre > p > a:hover {
      color: #F16EA7;
      text-decoration: underline;
+}
+
+.base{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.base > img{
+    height: 28rem;
+    width: 26rem;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.infos > p{
+    width: 45%;
+    flex-wrap: wrap;
+}
+
+.infos > h1{
+font-size: 3rem;
+margin-bottom: -9rem;
+}
+
+.infos > h2{
+    font-size: 1.7rem;
+    margin-bottom: -6rem;
 }

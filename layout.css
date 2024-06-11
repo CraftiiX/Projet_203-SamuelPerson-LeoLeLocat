@@ -10,7 +10,12 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    color: #F16EA7;
+
 }
 
 nav > div {
@@ -24,11 +29,11 @@ nav > div {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .france > img {
     width: 50px;
+    margin-right: 15%;
 }
 
 article {
@@ -40,8 +45,15 @@ article > a > img {
     border-radius: 50%;
 }
 
+h2 {
+    font-family: "Fredoka", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
 a{
     text-decoration: none;
+    color:#F16EA7;
 }
 
 .login {
@@ -53,11 +65,14 @@ a{
 .Type_shop {
     display: flex;
     justify-content: center;
+    font-family: "Fredoka", sans-serif;
+    font-size: 1em;
+
 }
 
 
 section > img {
-    width: 50%;
+    width: 40%;
 }
 
 
@@ -67,13 +82,15 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-family: "Hind Vadodara", sans-serif;
+    font-size: 1.2em;
+    color: #DFFFFB;
 }
 
 footer > div {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-
+    justify-content: center;
 }
 
 /* Page produit*/

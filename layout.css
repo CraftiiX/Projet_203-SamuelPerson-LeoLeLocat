@@ -10,20 +10,55 @@ nav{
     justify-content: center;
 }
 
-nav > div{
+nav > div {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+.france {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.france > img {
+    width: 50px;
+}
+
 a{
     text-decoration: none;
 }
 
-footer{
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.Type_shop {
+    display: flex;
+    justify-content: center;
+}
+
+
+section > img {
+    width: 50%;
+}
+
+
+
+footer {
     background-color: #F16EA7;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }

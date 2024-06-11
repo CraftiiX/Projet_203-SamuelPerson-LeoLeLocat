@@ -10,6 +10,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 nav > div {
@@ -28,6 +29,15 @@ nav > div {
 
 .france > img {
     width: 50px;
+}
+
+article {
+    border: 80px #DFFFFB;
+}
+
+article > a > img {
+    border: 80px #DFFFFB;
+    border-radius: 50%;
 }
 
 a{

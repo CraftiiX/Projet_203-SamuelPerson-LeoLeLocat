@@ -38,25 +38,32 @@
     width: 26rem;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .infos{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding-top: 3%;
+    width: 30%;
+    margin-top: -6rem;
 }
 
 .infos > p{
-    width: 45%;
+    width: 100%;
     flex-wrap: wrap;
+    padding-bottom: 6rem;
 }
 
 .infos > h1{
 font-size: 3rem;
-margin-bottom: -9rem;
+
 }
 
 .infos > h2{
     font-size: 1.7rem;
-    margin-bottom: -6rem;
 }

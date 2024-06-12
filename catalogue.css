@@ -71,20 +71,21 @@ main > section{
     flex-wrap: wrap;
 }
 
-main > section > article{
+article{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 4rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
-main > section > article > div{
+article > div{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 35%;
+    width: 45%;
 }
 
 

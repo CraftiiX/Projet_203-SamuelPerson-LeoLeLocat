@@ -44,6 +44,12 @@ nav > div {
 
 /* main */
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .barre {
     border-radius: 24px;
     background-color: #DFFFFB;

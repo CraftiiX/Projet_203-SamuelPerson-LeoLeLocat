@@ -36,14 +36,26 @@ nav > div {
     margin-right: 15%;
 }
 
+.img_bas {
+    
+}
+
+
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 article {
     border: 80px #DFFFFB;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 article > a > img {
-    border: 80px #DFFFFB;
+    width : 40%;
     border-radius: 50%;
 }
 
@@ -56,6 +68,8 @@ h2 {
 a{
     text-decoration: none;
     color:#F16EA7;
+    display: flex;
+    justify-content: center;
 }
 
 .login {
@@ -72,9 +86,11 @@ a{
 
 }
 
-section > img {
-    width: 30%;
+.confiz {
+    display:flex;
+    justify-content: center;
 }
+
 
 footer {
     background-color: #F16EA7;

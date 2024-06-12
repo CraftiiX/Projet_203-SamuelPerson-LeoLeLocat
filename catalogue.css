@@ -80,7 +80,7 @@ main{
     justify-content: center;
 }
 
-main > section{
+main > section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -96,11 +96,11 @@ main > section > article {
     padding-bottom: 3rem;
 }
 
-main > section > article > a > img{
+article > a > div > button > img {
 height: 20rem;
 }
 
-main > section > article > div{
+article > div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

@@ -38,6 +38,8 @@ nav > div {
 
 article {
     border: 80px #DFFFFB;
+    display: flex;
+    flex-direction: row;
 }
 
 article > a > img {

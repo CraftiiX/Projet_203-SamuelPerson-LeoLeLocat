@@ -4,6 +4,8 @@ body{
     margin: 0%;
 }
 
+/* header */
+
 nav{
     background-color: #DFFFFB;
     height: 6rem;
@@ -25,6 +27,10 @@ nav > div {
     justify-content: space-around;
 }
 
+.menu > a {
+    color: #F16EA7;
+}
+
 .france {
     display: flex;
     justify-content: center;
@@ -35,6 +41,8 @@ nav > div {
     width: 50px;
     margin-right: 15%;
 }
+
+/* main */
 
 .barre {
     border-radius: 24px;
@@ -91,7 +99,6 @@ main{
     justify-content: space-around;
     align-items: center;
     width: 30%;
-    margin-top: -6rem;
 }
 
 .infos > p{
@@ -102,12 +109,13 @@ main{
 
 .infos > h1{
 font-size: 3rem;
-
 }
 
 .infos > h2{
     font-size: 1.7rem;
 }
+
+/* footer */
 
 footer {
     background-color: #F16EA7;
@@ -123,4 +131,10 @@ footer > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* liens */
+
+a{
+    text-decoration: none;
 }

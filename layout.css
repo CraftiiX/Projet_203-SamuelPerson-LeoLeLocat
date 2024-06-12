@@ -1,10 +1,10 @@
 /* Éléments connus */
 
-body{
+body {
     margin: 0%;
 }
 
-nav{
+nav {
     background-color: #DFFFFB;
     height: 6rem;
     display: flex;
@@ -86,7 +86,6 @@ a{
     display:flex;
     justify-content: center;
 }
-
 
 footer {
     background-color: #F16EA7;

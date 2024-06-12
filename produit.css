@@ -1,5 +1,40 @@
 /* Page produit*/
 
+body{
+    margin: 0%;
+}
+
+nav{
+    background-color: #DFFFFB;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    color: #F16EA7;
+
+}
+
+nav > div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.france {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.france > img {
+    width: 50px;
+    margin-right: 15%;
+}
 
 .barre {
     border-radius: 24px;
@@ -11,6 +46,12 @@
     font-size: 1.7rem;
     font-optical-sizing: auto;
     font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.barre > p{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -41,7 +82,7 @@
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .infos{
@@ -66,4 +107,20 @@ font-size: 3rem;
 
 .infos > h2{
     font-size: 1.7rem;
+}
+
+footer {
+    background-color: #F16EA7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "Hind Vadodara", sans-serif;
+    font-size: 1.2em;
+    color: #DFFFFB;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

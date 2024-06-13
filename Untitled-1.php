@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+<!--Groupe 8 Samuel PERSON et Léo LE LOCAT -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogue</title>
 
-    <link rel="stylesheet" href="index.html">
-    <link rel="stylesheet" href="produit.html">
-    <link rel="stylesheet" href="catalogue.css">
+    <title>Confiz</title>
+    
+    <link rel="stylesheet" href="Catalogue.html">
+    <link rel="stylesheet" href="Produit.html">
+    <link rel="stylesheet" href="Layout.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
@@ -20,11 +22,32 @@
 <body>
     <nav>
         <div class="menu">
-
-            <div class="Accueil">
-                <p>Accueil </p>
+            <div class="france">
+                <img src="media/images/france.png" alt="drapeau_France">
+                <p>FR</p>
             </div>
-            <div class="main-container">
+
+            <div class="login"><a href="#Connexion" class=link>Se connecter ?</a></div>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="Type_shop">
+            <h1>Choisissez votre boutique </h1>
+        </div>
+
+            <section>
+                <article>
+                    <a href="" class="img_bas"><img src="media/images/shop1.png" alt="Logo_boutique_ville1"></a>
+                    <h2>Aubergenville</h2>
+                </article>
+
+                <article>
+                    <a href=""class="img_haut"><img src="media/images/shop2.png" alt="Logo_boutique_ville2"></a>
+                    <h2>Roubaix</h2>
+                </article>
+
+                <div class="main-container">
     <br>
     <p>
         <?php
@@ -52,189 +75,26 @@
     include_once ("footer.php");
 ?>
 
-            <div class="Catalogue">
-                <p>Catalogue </p>
-            </div>
+                <article>
+                    <a href="" class="img_bas" ><img src="media/images/shop3.png" alt="Logo_boutique_ville3"></a>
+                    <h2>Nice</h2>
+                </article>
 
-        </div>
-    </nav>
+            </section>
+        
+            <div class="confiz"><img src="media/images/confiz.png" alt="Logo_confiz"></div>
 
-    <main>
-        <div class="titles">
-            <h1>Catalogue</h1>
-            <h2>Tous les bonbons de la boutique Haribo de 123</h2>
-
-        </div>
-
-        <section>
+        <footer>   
             
-            <article>
-                <a href="produit.html"><img src="media/images/tagadared.png" alt="Sachet de tagada rouges"></a>
-                <div class="button_quantite">
-                    <p>Tagada rouges haribo</p>
-                    <button alt="Retirer une unité du stock">
-                        <img src="media/images/bouton_moins.png" alt="bouton moins">
-                    </button>
-
-                    <button alt="Ajouter une unité au stock">
-                        <img src="media/images/bouton_plus.png" alt="bouton plus">
-                    </button>
-                </div>
-                    
-                <div class="price">
-                    <p>6€</p>
-                    <p>Quantité : </p>
-                </div>
-            </article>
-
-            <article>
-                <a href="catalogue.html"><img src="media/images/ours_or.png" alt="Sachet d'ours d'or"></a>
-                <div class="button_quantite">
-                    <p>Tagada rouges haribo</p>
-                    <button alt="Retirer une unité du stock">
-                        <img src="media/images/bouton_moins.png" alt="bouton moins">
-                    </button>
-
-                    <button alt="Ajouter une unité au stock">
-                        <img src="media/images/bouton_plus.png" alt="bouton plus">
-                    </button>
-                </div>
-
-                <div class="price">
-                    <p>6€</p>
-                    <p>Quantité : </p>
-                </div>
-            </article>
-
-            <article>
-                <a href="catalogue.html"><img src="media/images/tagadared.png" alt="Sachet de tagada rouges"></a>
-                <div class="button_quantite">
-                    <p>Tagada rouges haribo</p>
-                    <button alt="Retirer une unité du stock">
-                        <img src="media/images/bouton_moins.png" alt="bouton moins">
-                    </button>
-
-                    <button alt="Ajouter une unité au stock">
-                        <img src="media/images/bouton_plus.png" alt="bouton plus">
-                    </button>
-                </div>
-
-                <div class="price">
-                    <p>6€</p>
-                    <p>Quantité : </p>
-                </div>
-            </article>
-
-            <article>
-                <a href="catalogue.html"><img src="media/images/ours_or.png" alt="Sachet d'ours d'or"></a>
-                <div class="button_quantite">
-                    <p>Tagada rouges haribo</p>
-                    <button alt="Retirer une unité du stock">
-                        <img src="media/images/bouton_moins.png" alt="bouton moins">
-                    </button>
-
-                    <button alt="Ajouter une unité au stock">
-                        <img src="media/images/bouton_plus.png" alt="bouton plus">
-                    </button>
-                </div>
-
-                <div class="price">
-                    <p>6€</p>
-                    <p>Quantité : </p>
-                </div>
-            </article>
-
-            <article>
-                <a href="catalogue.html"><img src="media/images/tagadared.png" alt="Sachet de tagada rouges"></a>
-                <div class="button_quantite">
-                    <p>Tagada rouges haribo</p>
-                    <button alt="Retirer une unité du stock">
-                        <img src="media/images/bouton_moins.png" alt="bouton moins">
-                    </button>
-
-                    <button alt="Ajouter une unité au stock">
-                        <img src="media/images/bouton_plus.png" alt="bouton plus">
-                    </button>
-                </div>
-
-                <div class="price">
-                    <p>6€</p>
-                    <p>Quantité : </p>
-                </div>
-            </article>
-
-            <article>
-                <a href="catalogue.html"><img src="media/images/ours_or.png" alt="Sachet d'ours d'or"></a>
-                <div class="button_quantite">
-                    <p>Tagada rouges haribo</p>
-                    <button alt="Retirer une unité du stock">
-                        <img src="media/images/bouton_moins.png" alt="bouton moins">
-                    </button>
-
-                    <button alt="Ajouter une unité au stock">
-                        <img src="media/images/bouton_plus.png" alt="bouton plus">
-                    </button>
-                </div>
-
-                <div class="price">
-                    <p>6€</p>
-                    <p>Quantité : </p>
-                </div>
-            </article>
-
-            <article>
-                <a href="catalogue.html"><img src="media/images/tagadared.png" alt="Sachet de tagada rouges"></a>
-                <div class="button_quantite">
-                    <p>Tagada rouges haribo</p>
-                    <button alt="Retirer une unité du stock">
-                        <img src="media/images/bouton_moins.png" alt="bouton moins">
-                    </button>
-
-                    <button alt="Ajouter une unité au stock">
-                        <img src="media/images/bouton_plus.png" alt="bouton plus">
-                    </button>
-                </div>
-
-                <div class="price">
-                    <p>6€</p>
-                    <p>Quantité : </p>
-                </div>
-            </article>
-
-            <article>
-                <a href="catalogue.html"><img src="media/images/ours_or.png" alt="Sachet d'ours d'or"></a>
-                <div class="button_quantite">
-                    <p>Tagada rouges haribo</p>
-                    <button alt="Retirer une unité du stock">
-                        <img src="media/images/bouton_moins.png" alt="bouton moins">
-                    </button>
-
-                    <button alt="Ajouter une unité au stock">
-                        <img src="media/images/bouton_plus.png" alt="bouton plus">
-                    </button>
-                </div>
-                
-                <div class="price">
-                    <p>6€</p>
-                    <p>Quantité : </p>
-                </div>
-            </article>
-
-
-        </section>
-
-        <footer>
-
             <div class="foot_left">
                 <p>Réalisé par Samuel PERSON et Léo LE LOCAT</p>
             </div>
 
             <div class="foot_right">
-                <a href="#"><img src="media/images/haribo.png" alt="Logo_Haribo"></a>
+                <a href="https://www.haribo.com/fr-fr"><img src="media/images/haribo.png" alt="Logo_Haribo"></a>
             </div>
-
+        
         </footer>
     </main>
 </body>
-
 </html>

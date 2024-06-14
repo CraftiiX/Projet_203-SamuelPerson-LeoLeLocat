@@ -67,7 +67,7 @@ include_once ("header.php");
                     </div>
 
                     <div class="price">
-                        <p>6€</p>
+                        <p><?php echo ($bonbons["prix"]);?></p>
                         <p>Quantité : </p>
                     </div>
                 </article>

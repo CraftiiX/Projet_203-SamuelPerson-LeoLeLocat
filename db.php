@@ -37,3 +37,8 @@ function requete($sql){
     $stmt = $PDO->query($sql);
     return $stmt->fetchAll();
 }
+
+//tests
+function count(){
+    
+}

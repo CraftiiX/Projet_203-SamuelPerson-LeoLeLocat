@@ -18,15 +18,15 @@
     <nav>
         <div class="menu">
 
-            <div class="Accueil">
-                <p>Accueil </p>
+        <div class="Accueil">
+                <p>Accueil</p>
             </div>
 
             <!--    PHP A COMPLETER 
                 BARRE DE RECHERCHE   -->
 
             <div class="Catalogue">
-                <p>Catalogue </p>
+                <p>Catalogue</p>
             </div>
 
         </div>

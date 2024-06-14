@@ -49,7 +49,7 @@ include_once("header.php");
 
             <section>
                 <article>
-                    <a href="" class="img_bas"><img src="media/images/shop1.png" alt="Logo_boutique_ville1"></a>
+                    <a href="catalogue.php" class="img_bas"><img src="media/images/shop1.png" alt="Logo_boutique_ville1"></a>
                     <h2>Aubergenville</h2>
                 </article>
 

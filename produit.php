@@ -49,7 +49,7 @@ include_once ("header.php");
         ?>
             
             <div class="price">
-                <img src="<?php echo($product["id"])?>" alt="">
+                <img src="media/images/<?php echo($product["id"])?>" alt="">
                 <p>6€</p>
             </div>
 

@@ -5,7 +5,7 @@ include_once ("header.php");
 function check_login($username, $password)
 {
  global $PDO;
- $sql = "SELECT id, password FROM utilisateurs WHERE username = '" . $username . "'";
+ $sql = "SELECT id, password, role FROM utilisateurs WHERE username = '" . $username . "'";
  $results = array();
 
  try {
@@ -38,8 +38,14 @@ $resultat = check_login($user, $mdp);
 if ($resultat == true){
     $_SESSION["username"] = $user;
     $_SESSION["loggedin"] = true;
- header("Location: index.php");
     exit();
+    //if/else dans le if ?
+    if ($role = 'admin'){
+        header("Location: index_admin.php");
+    }
+    else{
+        header("Location: index.php");
+    }
 }
 else{
     $_SESSION["error"] = "Mauvais login / mot de passe";

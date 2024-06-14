@@ -1,3 +1,7 @@
+<?php
+include_once ("header.php");
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -38,14 +42,19 @@
         </div>
         
         <section class="produit">
+
+        <?php 
+            $id = $_GET["productid"];
+            $product = requete("select * from confiseries where id=$id");
+        ?>
             
             <div class="price">
-                <img src="media/images/tagadared.png" alt="utiliser PHP">
+                <img src="<?php echo($product["id"])?>" alt="">
                 <p>6€</p>
             </div>
 
             <article class="infos">
-                <h1>Nom produit</h1>
+                <h1><?php echo($product["nom"])?>Nom produit</h1>
             
                 <button>Ajouter au panier</button>
             </article>

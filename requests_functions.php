@@ -3,6 +3,8 @@ include_once ("header.php");
 
 //$user = $_POST["username"];
 
+
+
 //test
 function take_name($user){
  global $PDO;

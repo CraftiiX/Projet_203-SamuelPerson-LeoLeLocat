@@ -1,3 +1,8 @@
+<?php
+include_once("verif_connexion.php");
+include_once("header.php");
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -43,6 +48,32 @@
 
         <section>
             
+        <?php
+        $bonbons=requete('select * from confiseries');
+        foreach($bonbon as $bonbons){
+            ?>
+            <article>
+                <a href="produit.php"><img src="media/images/tagadared.png" alt="Sachet de tagada rouges"></a>
+                <div class="button_quantite">
+                    <p>Tagada rouges haribo</p>
+                    <button alt="Retirer une unité du stock">
+                        <img src="media/images/bouton_moins.png" alt="bouton moins">
+                    </button>
+
+                    <button alt="Ajouter une unité au stock">
+                        <img src="media/images/bouton_plus.png" alt="bouton plus">
+                    </button>
+                </div>
+                    
+                <div class="price">
+                    <p>6€</p>
+                    <p>Quantité : </p>
+                </div>
+            </article>
+            <?php
+        }
+        ?>
+
             <article>
                 <a href="produit.html"><img src="media/images/tagadared.png" alt="Sachet de tagada rouges"></a>
                 <div class="button_quantite">

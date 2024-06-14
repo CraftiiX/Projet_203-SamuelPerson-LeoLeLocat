@@ -1,12 +1,11 @@
 <?php
 include_once ("header.php");
-include_on
 
 
 function check_login($username, $password)
 {
  global $PDO;
- $sql = "SELECT id, password, FROM utilisateurs WHERE username = '" . $username . "'";
+ $sql = "SELECT id, password FROM utilisateurs WHERE username = '" . $username . "'";
  $results = array();
 
  try {
@@ -20,35 +19,13 @@ function check_login($username, $password)
  return $results[0]['id'];
  else
  return 0;
+
  }
+
 
  } catch (Exception $ex) {
  echo $ex->getMessage();
  }
-}
-
-//fonction Léo pr dire bjour
-$username = $_POST['username'];  
-$role = getUserRole($username);
-
-function getUserRole($username){
-    global $PDO;
-    $sql = "SELECT role FROM utilisateurs WHERE username = '" . $username . "'";
-    $results = array();   
-
-    try {
-        $stmt = $PDO->prepare($sql);
-        $stmt->execute();
-        $results = $stmt->fetchall();
-    }
-}
-
-if ($role == 'admin') {
-    echo SalutAdmin();
-} elseif ($role == 'gerant') {
-    echo SalutGerant();
-} else {
-    echo SalutClient();
 }
 
 // Récupérer les valeurs du formulaire
@@ -61,12 +38,11 @@ $resultat = check_login($user, $mdp);
 if ($resultat == true){
     $_SESSION["username"] = $user;
     $_SESSION["loggedin"] = true;
-    //if/else dans le if ?
-        
+ header("Location: index.php");
+    exit();
 }
 else{
     $_SESSION["error"] = "Mauvais login / mot de passe";
  header("Location: login.php");
     exit();
 }
-?>

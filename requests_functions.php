@@ -15,14 +15,14 @@ function take_name($user){
  echo ($results[0]["prenom"]);
 }
 
-function getUserRole($username){
+/* function getUserRole($username){
     global $PDO;
     $sql = "SELECT role FROM utilisateurs WHERE username = '" . $username . "'";
     $results = array();   
-}
+} */
 
 //fonction Léo pr dire bjour
-$username = $_POST['username'];  
+/* $username = $_POST['username'];  
 $role = getUserRole($username);
 
 if ($role == 'admin') {
@@ -44,7 +44,7 @@ function SalutGerant() {
 function SalutClient() {
     return "<h1>Bonjour client !</h1>";
 }
-?>
+?> */
 
 
 

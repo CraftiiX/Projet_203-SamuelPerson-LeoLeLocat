@@ -1,14 +1,11 @@
-<!-- <div class="main-container">
-    <br>
-    <p>
-        <?php
+<?php
             if (isset($_SESSION["error"])){
                 echo ($_SESSION["error"]);
                 unset($_SESSION["error"]);
             }
         ?>
     </p>
-    <form action="verif_connexion.php" method="post">
+    <form class="formulaire" action="verif_connexion.php" method="post">
         <div class="form-group">
             <label for="username">Identifiant : </label>
             <input type="text" class="form-control" id="username" name="username">
@@ -18,10 +15,6 @@
             <input type="password" class="form-control" id="mdp" name="mdp">
         </div>
         <br>
-        <button type="submit" class="btn btn-dark">Submit</button>
+        <button type="submit" class="btn btn-dark">Valider</button>
     </form>
 </div>
-
-<?php
-    include_once ("footer.php");
-?> -->

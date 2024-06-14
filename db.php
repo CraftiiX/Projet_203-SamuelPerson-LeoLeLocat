@@ -8,10 +8,10 @@ error_reporting(E_ALL);
 
 const DB_DRIVER = 'mysql';
 const DB_HOST = '127.0.0.1';
-const DB_PORT = 3306;
+const DB_PORT = 3306; 
 const DB_USERNAME = 'root';
 const DB_PASSWORD = '';
-const DB_DATABASE = ''; // Nom de votre base de données
+const DB_DATABASE = 'confiz'; // Nom de votre base de données
 
 try {
     $PDO = new PDO(

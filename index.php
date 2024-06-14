@@ -1,3 +1,8 @@
+<?php
+include_once("requests_functions.php");
+include_once("header.php");
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -26,12 +31,18 @@
                 <img src="media/images/france.png" alt="drapeau_France">
                 <p>FR</p>
             </div>
-
-            <div class="login"><a href="Untitled-1.php" class=link>Se connecter ?</a></div>
+            <!-- FORMULAIRE -->   
         </div>
     </nav>
     
     <main>
+
+<!--     php
+    $user = $_POST["username"];
+    take_name($user);
+    test
+    ?  -->
+
         <div class="Type_shop">
             <h1>Choisissez votre boutique </h1>
         </div>
@@ -46,6 +57,10 @@
                     <a href=""class="img_haut"><img src="media/images/shop2.png" alt="Logo_boutique_ville2"></a>
                     <h2>Roubaix</h2>
                 </article>
+
+                <div class="main-container">
+    <br>
+    <p>
 
                 <article>
                     <a href="" class="img_bas" ><img src="media/images/shop3.png" alt="Logo_boutique_ville3"></a>
@@ -63,7 +78,7 @@
             </div>
 
             <div class="foot_right">
-                <a href="Untitled-1.php"><img src="media/images/haribo.png" alt="Logo_Haribo"></a>
+                <a href="https://www.haribo.com/fr-fr"><img src="media/images/haribo.png" alt="Logo_Haribo"></a>
             </div>
         
         </footer>

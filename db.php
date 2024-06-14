@@ -39,6 +39,7 @@ function requete($sql){
 }
 
 //tests
-function count(){
-    
-}
+// function countProducts($sql){
+//     global $PDO;
+
+// }

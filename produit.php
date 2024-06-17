@@ -45,16 +45,17 @@ include_once ("header.php");
 
         <?php 
             $id = $_GET["productid"];
-            $product = requete("select * from confiseries where id=$id");
+            $produit = requete("select * from confiseries where id=$id");
+            foreach ($produit as $vartest)
         ?>
             
             <div class="price">
-                <img src="media/images/<?php echo($product["id"])?>" alt="">
+                <img src="media/images/<?php echo($vartest["id"])?>" alt="">
                 <p>6€</p>
             </div>
 
             <article class="infos">
-                <h1><?php echo($product["nom"])?>Nom produit</h1>
+                <h1><?php echo($vartest["nom"])?>Nom produit</h1>
             
                 <button>Ajouter au panier</button>
             </article>

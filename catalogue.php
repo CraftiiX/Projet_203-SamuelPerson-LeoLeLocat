@@ -52,7 +52,7 @@ include_once ("header.php");
             foreach ($product as $bonbons) {
                 ?>
                 <article>
-                    <a href="produit.php?productid=<?php echo ($bonbons["id"]); ?>">
+                    <a href="produit.php?productid=<?php echo($bonbons["id"]); ?>">
                         <img src="media/images/<?php echo($bonbons["illustration"]);?>" alt="">
                     </a>
                     <div class="button_quantite">

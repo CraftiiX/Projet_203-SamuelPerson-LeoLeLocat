@@ -50,7 +50,7 @@ include_once ("header.php");
         ?>
             
             <div class="price">
-                <img src="media/images/<?php echo($var["id"])?>" alt="">
+                <img src="media/images/Img_Php/img<?php echo ($var["id"]); ?>.png" alt="Paquet de <?php echo ($var["description"]); ?>">
                 <p><?php echo($var["prix"])?> €</p>            </div>
 
             <article class="infos">

@@ -96,10 +96,6 @@ main > section > article {
     padding-bottom: 3rem;
 }
 
-article > a > div > button > img {
-height: 20rem;
-}
-
 article > div {
     display: flex;
     flex-direction: row;

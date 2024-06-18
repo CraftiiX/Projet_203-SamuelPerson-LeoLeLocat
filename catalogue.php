@@ -11,8 +11,6 @@ include_once ("header.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogue</title>
 
-    <link rel="stylesheet" href="index.html">
-    <link rel="stylesheet" href="produit.html">
     <link rel="stylesheet" href="catalogue.css">
 
     <style>
@@ -47,36 +45,35 @@ include_once ("header.php");
 
         <section>
 
-        <?php
+            <?php
             $idshop = $_GET["shopid"];
             $stock = requete("select * from stocks where boutique_id=$idshop");
             foreach ($stock as $stockvar) {
-            $product = requete("select * from confiseries where id= $stockvar[confiserie_id]");
-            foreach ($product as $bonbons) {
-                ?>
-                <article>
-                    <a href="produit.php?productid=<?php echo($bonbons["id"]); ?>">
-                        <img src="media/images/<?php echo($bonbons["illustration"]);?>" alt="">
-                    </a>
-                    <div class="button_quantite">
-                        <p><?php echo($bonbons["nom"]);?></p>
-                        <button alt="Retirer une unité du stock">
-                            <img src="media/images/bouton_moins.png" alt="bouton moins">
-                        </button>
+                $product = requete("select * from confiseries where id= $stockvar[confiserie_id]");
+                foreach ($product as $bonbons) {
+                    ?>
+                    <article>
+                        <a href="produit.php?productid=<?php echo ($bonbons["id"]); ?>">
+                            <img class="imgbonbon" src="media/images/Img_Php/img<?php echo ($bonbons["id"]); ?>.png" alt="Paquet de <?php echo ($bonbons["description"]); ?>">
+                        </a>
+                        <div class="button_quantite">
+                            <button alt="Retirer une unité du stock">
+                                <img src="media/images/bouton_moins.png" alt="bouton moins">
+                            </button>
+                            <p><?php echo ($bonbons["nom"]); ?></p>
+                            <button alt="Ajouter une unité au stock">
+                                <img src="media/images/bouton_plus.png" alt="bouton plus">
+                            </button>
+                        </div>
 
-                        <button alt="Ajouter une unité au stock">
-                            <img src="media/images/bouton_plus.png" alt="bouton plus">
-                        </button>
-                    </div>
-
-                    <div class="price">
-                        <p><?php echo ($bonbons["prix"]);?> €</p>
-                        <p>Quantité : <?php echo($stockvar["quantite"]) ?> </p>
-                    </div>
-                </article>
-                <?php
+                        <div class="price">
+                            <p>Prix : <?php echo ($bonbons["prix"]); ?> €</p>
+                            <p>Quantité : <?php echo ($stockvar["quantite"]) ?> </p>
+                        </div>
+                    </article>
+                    <?php
+                }
             }
-        }
             ?>
 
 

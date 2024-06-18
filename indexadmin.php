@@ -13,9 +13,6 @@ include_once ("header.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Confiz</title>
-
-    <link rel="stylesheet" href="Catalogue.html">
-    <link rel="stylesheet" href="Produit.html">
     <link rel="stylesheet" href="Layout.css">
 
     <style>
@@ -66,12 +63,13 @@ include_once ("header.php");
             <a href="catalogue.php?shopid=<?php echo($shop["id"]); ?>" class="img_bas"><img src="media/images/shop1.png"
                     alt="Logo_boutique_ville1"></a>
             <h2><?php echo($shop["nom"]); ?></h2>
-        </article>
             <div class="button_quantite">
                         <button alt="Retirer la boutique">
                             <img src="media/images/bouton_moins.png" alt="bouton moins">
                         </button>
                     </div>
+        </article>
+
             <?php
             }
             ?>

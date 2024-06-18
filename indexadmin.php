@@ -45,22 +45,20 @@ include_once ("header.php");
 
 
         <?php
-      //  $user = $_POST["username"];
-      //  $test = requete("select * from utilisateurs where username='$user'");
-      //  foreach ($test as $uservar)
-      ?>
+       // $user = $_POST["username"];
+       // $test = requete("select * from utilisateurs where username='$user'");
+        //foreach ($test as $uservar)
+        ?> 
 
-        <h1>Bienvenue 
-            <?php 
-            //echo ($uservar["prenom"]) ?>
-        </h1>
+        <h1>Bienvenue <?php
+        // echo ($uservar["prenom"]) ?></h1>
 
         <div class="Type_shop">
             <h1>Choisissez votre boutique </h1>
         </div>
 
         <section>
-    <?php
+        <?php
         $boutiques = requete('select * from boutiques');
             foreach ($boutiques as $shop) {
             ?>

@@ -32,14 +32,26 @@ function check_login($username, $password)
 $user = $_POST["username"];
 $mdp = $_POST["mdp"];
 
+//Récupérer le role de l'utilisateur
+$role = requete("select role from utilisateurs where username=$user");
+
+
 // Vérifier si l'utilisateur peut être authentifier
 $resultat = check_login($user, $mdp);
 
 if ($resultat == true){
     $_SESSION["username"] = $user;
     $_SESSION["loggedin"] = true;
- header("Location: index.php");
-    exit();
+    if ($role="admin"){
+        header("Location: indexadmin.php");
+        exit();
+    }
+    //rajouter un elseif pour les gérants une fois que
+    //j'aurais fait le lien entre boutiques et catalogue
+    else{
+        header("Location: index.php");
+        exit();
+    }
 }
 else{
     $_SESSION["error"] = "Mauvais login / mot de passe";

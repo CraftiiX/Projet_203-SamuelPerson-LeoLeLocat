@@ -56,7 +56,8 @@ include_once ("header.php");
 
             <article class="infos">
                 <h1><?php echo($var["nom"])?></h1>
-            
+                <h2><?php echo($var["prix"])?></h2>
+                <p><?php echo($var["description"])?></p>
                 <button>Ajouter au panier</button>
             </article>
         </section>

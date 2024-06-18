@@ -49,9 +49,9 @@ include_once ("header.php");
 
         <?php
             $idshop = $_GET["shopid"];
-            $stock = requete("select confiserie_id from stocks where boutique_id=$idshop");
+            $stock = requete("select * from stocks where boutique_id=$idshop");
             foreach ($stock as $stockvar) {
-            $product = requete("select * from confiseries where id= $stockvar");
+            $product = requete("select * from confiseries where id= $stockvar[confiserie_id]");
             foreach ($product as $bonbons) {
                 ?>
                 <article>
@@ -71,7 +71,7 @@ include_once ("header.php");
 
                     <div class="price">
                         <p><?php echo ($bonbons["prix"]);?> €</p>
-                        <p>Quantité : </p>
+                        <p>Quantité : <?php echo($stockvar["quantite"]) ?> </p>
                     </div>
                 </article>
                 <?php

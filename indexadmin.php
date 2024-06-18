@@ -13,7 +13,7 @@ include_once ("header.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Confiz</title>
-    <link rel="stylesheet" href="Layout.css">
+    <link rel="stylesheet" href="layout.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
@@ -59,7 +59,7 @@ include_once ("header.php");
         $boutiques = requete('select * from boutiques');
         foreach ($boutiques as $shop) {
         ?>
-        <article>
+        <article class="boutique">
             <a href="catalogue.php?shopid=<?php echo($shop["id"]); ?>" class="img_bas"><img src="media/images/shop1.png"
                     alt="Logo_boutique_ville1"></a>
             <h2><?php echo($shop["nom"]); ?></h2>

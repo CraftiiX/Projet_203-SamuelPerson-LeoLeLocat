@@ -117,3 +117,15 @@ footer > div {
     justify-content: center;
 }
 
+button {
+    background-color: white;
+    border: 0px solid white;
+    height: 2rem;
+    width: 2rem;
+}
+
+button > img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 24px;
+}

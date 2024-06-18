@@ -65,7 +65,7 @@ include_once ("header.php");
             foreach ($boutiques as $shop) {
             ?>
             <article>
-                <a href="catalogue.php?productid=<?php echo($shop["id"]); ?>" class="img_bas"><img src="media/images/shop1.png"
+                <a href="catalogue.php?shopid=<?php echo($shop["id"]); ?>" class="img_bas"><img src="media/images/shop1.png"
                         alt="Logo_boutique_ville1"></a>
                 <h2><?php echo($shop["nom"]); ?></h2>
             </article>

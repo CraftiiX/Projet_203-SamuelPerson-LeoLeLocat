@@ -60,13 +60,18 @@ include_once ("header.php");
         <section>
         <?php
         $boutiques = requete('select * from boutiques');
-            foreach ($boutiques as $shop) {
-            ?>
-            <article>
-                <a href="catalogue.php?productid=<?php echo($shop["id"]); ?>" class="img_bas"><img src="media/images/shop1.png"
-                        alt="Logo_boutique_ville1"></a>
-                <h2><?php echo($shop["nom"]); ?></h2>
-            </article>
+        foreach ($boutiques as $shop) {
+        ?>
+        <article>
+            <a href="catalogue.php?shopid=<?php echo($shop["id"]); ?>" class="img_bas"><img src="media/images/shop1.png"
+                    alt="Logo_boutique_ville1"></a>
+            <h2><?php echo($shop["nom"]); ?></h2>
+        </article>
+            <div class="button_quantite">
+                        <button alt="Retirer la boutique">
+                            <img src="media/images/bouton_moins.png" alt="bouton moins">
+                        </button>
+                    </div>
             <?php
             }
             ?>

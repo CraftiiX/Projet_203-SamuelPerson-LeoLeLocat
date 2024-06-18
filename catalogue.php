@@ -47,8 +47,11 @@ include_once ("header.php");
 
         <section>
 
-            <?php
-            $product = requete('select * from confiseries');
+        <?php
+            $idshop = $_GET["shopid"];
+            $stock = requete("select confiserie_id from stocks where boutique_id=$idshop");
+            foreach ($stock as $stockvar) {
+            $product = requete("select * from confiseries where id= $stockvar");
             foreach ($product as $bonbons) {
                 ?>
                 <article>
@@ -73,6 +76,7 @@ include_once ("header.php");
                 </article>
                 <?php
             }
+        }
             ?>
 
 

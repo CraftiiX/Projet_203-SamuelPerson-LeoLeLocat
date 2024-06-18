@@ -51,12 +51,10 @@ include_once ("header.php");
             
             <div class="price">
                 <img src="media/images/<?php echo($var["id"])?>" alt="">
-                <p>6€</p>
-            </div>
+                <p><?php echo($var["prix"])?> €</p>            </div>
 
             <article class="infos">
                 <h1><?php echo($var["nom"])?></h1>
-                <h2><?php echo($var["prix"])?></h2>
                 <p><?php echo($var["description"])?></p>
                 <button>Ajouter au panier</button>
             </article>

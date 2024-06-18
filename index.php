@@ -45,13 +45,13 @@ include_once ("header.php");
 
 
         <?php
-      //  $user = $_POST["username"];
-      //  $test = requete("select * from utilisateurs where username='$user'");
-      //  foreach ($test as $uservar)
-      ?>
+        //  $user = $_POST["username"];
+        //  $test = requete("select * from utilisateurs where username='$user'");
+        //  foreach ($test as $uservar)
+        ?>
 
-        <h1>Bienvenue 
-            <?php 
+        <h1>Bienvenue
+            <?php
             //echo ($uservar["prenom"]) ?>
         </h1>
 
@@ -60,16 +60,16 @@ include_once ("header.php");
         </div>
 
         <section>
-    <?php
-        $boutiques = requete('select * from boutiques');
-            foreach ($boutiques as $shop) {
-            ?>
-            <article>
-                <a href="catalogue.php?shopid=<?php echo($shop["id"]); ?>" class="img_bas"><img src="media/images/shop1.png"
-                        alt="Logo_boutique_ville1"></a>
-                <h2><?php echo($shop["nom"]); ?></h2>
-            </article>
             <?php
+            $boutiques = requete('select * from boutiques');
+            foreach ($boutiques as $shop) {
+                ?>
+                <article>
+                    <a href="catalogue.php?shopid=<?php echo ($shop["id"]); ?>" class="img_bas"><img
+                            src="media/images/shop1.png" alt="Logo_boutique_ville1"></a>
+                    <h2><?php echo ($shop["nom"]); ?></h2>
+                </article>
+                <?php
             }
             ?>
 

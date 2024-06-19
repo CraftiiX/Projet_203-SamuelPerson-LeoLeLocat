@@ -38,7 +38,7 @@ include_once ("header.php");
 
     <main>
         <div class="retour">
-            <p>Retour</p>
+            <a href="catalogue.php">Retour</a>
         </div>
         
         <section class="produit">

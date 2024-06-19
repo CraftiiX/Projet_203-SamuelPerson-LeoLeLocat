@@ -21,17 +21,20 @@ include_once ("header.php");
 <body>
     <nav>
         <div class="menu">
-
-        <div class="Accueil">
-                <p>Accueil</p>
-            </div>
-
+            <?php
+            if (isset($_SESSION['username'])) {
+                echo $_SESSION['username'];
+            }
+            ?>
         </div>
     </nav>
 
+    <?php 
+            $idshop = $_GET["shopid"];
+            ?>
     <main>
         <div class="retour">
-            <a href="catalogue.php">Retour au catalogue</a>
+            <a href="catalogue.php?shopid=<?php echo($idshop) ?>">Retour au catalogue</a>
         </div>
         
         <section class="produit">

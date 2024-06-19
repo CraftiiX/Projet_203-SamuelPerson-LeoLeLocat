@@ -31,7 +31,11 @@ include_once ("header.php");
                 <img src="media/images/france.png" alt="drapeau_France">
                 <p>FR</p>
             </div>
-            <!-- FORMULAIRE -->
+            <?php
+            if (isset($_SESSION['username'])) {
+                echo $_SESSION['username'];
+            }
+            ?>
         </div>
     </nav>
 

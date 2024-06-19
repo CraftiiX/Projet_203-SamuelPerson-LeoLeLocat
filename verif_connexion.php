@@ -32,30 +32,28 @@ function check_login($username, $password)
 $user = $_POST["username"];
 $mdp = $_POST["mdp"];
 
-//Récupérer le role de l'utilisateur
-$role = requete("select * from utilisateurs where username=$user");
-foreach ($role as $rolevar) {
-
 // Vérifier si l'utilisateur peut être authentifier
 $resultat = check_login($user, $mdp);
 
+//Récupérer le role de l'utilisateur
+
 if ($resultat == true){
     $role = requete("SELECT role FROM utilisateurs WHERE username = $user");
-
-        if ($role == "admin") {
+    foreach($role as $rolevar){
+        if ($rolevar == "admin") {
             header("Location: indexadmin.php");
             exit();
-        } elseif ($role == "gerant") {
-            $_SESSION["gerant"] = true; 
+        } elseif ($rolevar == "gerant") {
             header("Location: index.php"); 
             exit();
         } else { 
             header("Location: index.php");
             exit();
         }
+    }
     } else {
         $_SESSION["error"] = "Rôle non trouvé.";
         header("Location: login.php");
         exit();
     }
-}
+

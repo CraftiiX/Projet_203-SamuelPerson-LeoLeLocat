@@ -26,8 +26,11 @@ include_once ("header.php");
             <div class="Accueil">
                 <a href="index.php">Retour à l'accueil </a>
             </div>
-            <!--    PHP A COMPLETER 
-                BARRE DE RECHERCHE   -->
+            <?php
+            if (isset($_SESSION['username'])) {
+                echo $_SESSION['username'];
+            }
+            ?>
 
         </div>
     </nav>
@@ -50,7 +53,7 @@ include_once ("header.php");
                 foreach ($product as $bonbons) {
                     ?>
                     <article>
-                        <a href="produit.php?productid=<?php echo ($bonbons["id"]); ?>">
+                        <a href="produit.php?productid=<?php echo ($bonbons["id"]); ?>&shopid=<?php echo($idshop) ?>">
                             <img class="imgbonbon" src="media/images/Img_Php/img<?php echo ($bonbons["id"]); ?>.png"
                                 alt="Paquet de <?php echo ($bonbons["description"]); ?>">
                         </a>

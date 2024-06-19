@@ -62,11 +62,15 @@ include_once ("header.php");
         <article class="boutique">
             <a href="catalogue.php?shopid=<?php echo($shop["id"]); ?>" class="img_bas"><img src="media/images/shop1.png"
                     alt="Logo_boutique_ville1"></a>
-            <h2><?php echo($shop["nom"]); ?></h2>
+            <h2 class="shopname"><?php echo($shop["nom"]); ?></h2>
             <div class="button_quantite">
-                        <button alt="Retirer la boutique">
-                            <img src="media/images/bouton_moins.png" alt="bouton moins">
-                        </button>
+            <form action="supprimer_boutique.php" method="post">
+                    <input type="hidden" name="boutique_id" value="<?php echo($shop["id"]); ?>">
+                    <button type="submit" alt="Retirer la boutique">
+                        <img src="media/images/bouton_moins.png" alt="bouton moins">
+                    </button>
+                </form>
+                <p class="suppshop">supprimer la boutique</p>
                     </div>
         </article>
 
@@ -77,7 +81,7 @@ include_once ("header.php");
         </section>
 
         <div class="confiz"><img src="media/images/confiz.png" alt="Logo_confiz"></div>
-
+        </main>
         <footer>
 
             <div class="foot_left">
@@ -85,11 +89,11 @@ include_once ("header.php");
             </div>
 
             <div class="foot_right">
-                <a href="https://www.haribo.com/fr-fr"><img src="media/images/haribo.png" alt="Logo_Haribo"></a>
+            <a href="https://www.laboutiqueharibo.fr/"><img src="media/images/haribo.png" alt="Logo Haribo ramenant vers la boutique officielle"></a>
             </div>
 
         </footer>
-    </main>
+    
 </body>
 
 </html>

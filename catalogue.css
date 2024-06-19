@@ -2,6 +2,18 @@ body{
     margin: 0%;
 }
 
+a{
+    text-decoration: none;
+}
+
+h1{
+    color: #F16EA7;
+}
+
+h2{
+    color: orange;
+}
+
 nav{
     background-color: #DFFFFB;
     height: 6rem;
@@ -14,6 +26,10 @@ nav{
     font-size: 1.2em;
     color: #F16EA7;
 
+}
+
+.imgbonbon {
+    height: 20rem;
 }
 
 .menu{
@@ -51,8 +67,10 @@ article {
     display:flex;
     justify-content: center;
     font-family: "Fredoka", sans-serif;
-    
+}
 
+.price > p {
+    color: orange;
 }
 
 article > p {

@@ -20,6 +20,14 @@ nav{
 
 }
 
+a{
+    color:#F16EA7;
+}
+
+a:hover{
+    color: #E99F37;
+}
+
 nav > div {
     width: 100%;
     display: flex;
@@ -35,6 +43,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 .retour {
@@ -51,8 +60,12 @@ main{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    padding:10%
-    
+    padding:10%;
+    width:75%;
+}
+
+.produit > article > h1{
+color: #E99F37;
 }
 
 section > div > img {
@@ -89,30 +102,28 @@ article {
 .infos{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 30%;
     font-family: "Fredoka", sans-serif;
 }
 
-button {
+/* button {
     padding: 5%;
     background-color: white;
     font-size: 1.2em;
     font-family: "Hind Vadodara", sans-serif;
     color: #F16EA7;
     border-radius: 10%;
-}
+} */
 
 
 .infos > p{
-    width: 100%;
-    flex-wrap: wrap;
-    padding-bottom: 6rem;
+font-size: 1.2rem;
 }
 
 .infos > h1{
-font-size: 3rem;
+font-size: 5rem;
 }
 
 .infos > h2{

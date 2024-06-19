@@ -26,19 +26,12 @@ include_once ("header.php");
                 <p>Accueil</p>
             </div>
 
-            <!--    PHP A COMPLETER 
-                BARRE DE RECHERCHE   -->
-
-            <div class="Catalogue">
-                <p>Catalogue</p>
-            </div>
-
         </div>
     </nav>
 
     <main>
         <div class="retour">
-            <a href="catalogue.php">Retour</a>
+            <a href="catalogue.php">Retour au catalogue</a>
         </div>
         
         <section class="produit">
@@ -56,9 +49,10 @@ include_once ("header.php");
             <article class="infos">
                 <h1><?php echo($var["nom"])?></h1>
                 <p><?php echo($var["description"])?></p>
-                <button>Ajouter au panier</button>
+                <!-- <button>Ajouter au panier</button> -->
             </article>
         </section>
+        </main>
 
         <footer>
 
@@ -67,11 +61,10 @@ include_once ("header.php");
             </div>
 
             <div class="foot_right">
-                <a href="#"><img src="media/images/haribo.png" alt="Logo_Haribo"></a>
+            <a href="https://www.laboutiqueharibo.fr/"><img src="media/images/haribo.png" alt="Logo Haribo ramenant vers la boutique officielle"></a>
             </div>
 
         </footer>
-    </main>
 </body>
 
 </html>

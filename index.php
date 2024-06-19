@@ -56,7 +56,7 @@ include_once ("header.php");
         </h1>
 
         <div class="Type_shop">
-            <h1>Choisissez votre boutique </h1>
+            <h2>Choisissez votre boutique </h2>
         </div>
 
         <section>
@@ -77,6 +77,8 @@ include_once ("header.php");
 
         <div class="confiz"><img src="media/images/confiz.png" alt="Logo_confiz"></div>
 
+
+        </main>
         <footer>
 
             <div class="foot_left">
@@ -84,11 +86,11 @@ include_once ("header.php");
             </div>
 
             <div class="foot_right">
-                <a href="https://www.haribo.com/fr-fr"><img src="media/images/haribo.png" alt="Logo_Haribo"></a>
+            <a href="https://www.laboutiqueharibo.fr/"><img src="media/images/haribo.png" alt="Logo Haribo ramenant vers la boutique officielle"></a>
             </div>
 
         </footer>
-    </main>
+    
 </body>
 
 </html>

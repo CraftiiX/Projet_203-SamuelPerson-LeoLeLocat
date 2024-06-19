@@ -24,14 +24,10 @@ include_once ("header.php");
         <div class="menu">
 
             <div class="Accueil">
-                <p>Accueil </p>
+                <a href="index.php">Retour à l'accueil </a>
             </div>
             <!--    PHP A COMPLETER 
                 BARRE DE RECHERCHE   -->
-
-            <div class="Catalogue">
-                <p>Catalogue </p>
-            </div>
 
         </div>
     </nav>
@@ -63,7 +59,7 @@ include_once ("header.php");
                                 <input type="hidden" name="action" value="decrease">
                                 <input type="hidden" name="boutique_id" value="<?php echo $idshop; ?>">
                                 <button type="submit" alt="Ajouter une unité au stock">
-                                    <img src="media/images/bouton_moins.png" alt="bouton plus">
+                                    <img src="media/images/bouton_moins.png" alt="bouton moins">
                                 </button>
                             </form>
                             <p><?php echo ($bonbons["nom"]); ?></p>
@@ -98,7 +94,7 @@ include_once ("header.php");
             </div>
 
             <div class="foot_right">
-                <a href="#"><img src="media/images/haribo.png" alt="Logo_Haribo"></a>
+                <a href="https://www.laboutiqueharibo.fr/"><img src="media/images/haribo.png" alt="Logo Haribo ramenant vers la boutique officielle"></a>
             </div>
 
         </footer>

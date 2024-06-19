@@ -36,28 +36,26 @@ $mdp = $_POST["mdp"];
 $role = requete("select * from utilisateurs where username=$user");
 foreach ($role as $rolevar) {
 
-
 // Vérifier si l'utilisateur peut être authentifier
 $resultat = check_login($user, $mdp);
 
 if ($resultat == true){
-    $_SESSION["username"] = $user;
-    $_SESSION["loggedin"] = true;
-    if ($rolevar["role"]="admin"){
-       header("Location: indexadmin.php");
-       exit();
-    }
-   // rajouter un elseif pour les gérants une fois que j'aurais fait le lien entre boutiques et catalogue
-   else{
-        header("Location: index.php");
+    $role = requete("SELECT role FROM utilisateurs WHERE username = $user");
+
+        if ($role == "admin") {
+            header("Location: indexadmin.php");
+            exit();
+        } elseif ($role == "gerant") {
+            $_SESSION["gerant"] = true; 
+            header("Location: index.php"); 
+            exit();
+        } else { 
+            header("Location: index.php");
+            exit();
+        }
+    } else {
+        $_SESSION["error"] = "Rôle non trouvé.";
+        header("Location: login.php");
         exit();
     }
-}
-else{
-    $_SESSION["error"] = "Mauvais login / mot de passe";
- header("Location: login.php");
-    exit();
-}
-
-
 }
